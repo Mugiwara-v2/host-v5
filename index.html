@@ -173,6 +173,12 @@ if (req.readyState == 4){
 };
 }
 
+function ghdone() {
+window.msgs.innerHTML="<h1 style=color:#87FF33>"+LoadedMSG+"</h1>";
+history.pushState({}, '', 'index.html');
+read_ptr_at(0);
+}
+
 function awaitpl() {
 window.msgs.innerHTML="<h1 style=color:#87FF33>"+LoadedMSG+"</h1>";
 history.pushState({}, '', 'index.html');
